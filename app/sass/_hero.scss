@@ -1,0 +1,75 @@
+.hero{
+	.container{
+		background-image: url('./../img/auto.webp');
+		background-position: right center;
+		background-repeat: no-repeat;
+		position: relative;
+	}
+
+
+
+	&__title{
+		display: block;
+		width: 511px;
+		font-size: 45px;
+		font-weight: 700;
+		padding-top: 63px;
+	}
+
+	&__description{
+		display: block;
+		padding-top: 56px;
+		width: 489px;
+		font-family: 'Raleway', sans-serif;
+		font-weight: 400;
+		font-size: 20px;
+	}
+
+	&__services{
+		display: flex;
+		flex-wrap: wrap;
+		padding-top: 75px !important;
+		width: 50%;
+		li{
+			display: flex;
+			width: 50%;
+			align-items: center;
+			font-family: 'Raleway', sans-serif;
+			font-size: 16px;
+			padding-bottom: 35px;
+			.round{
+				width: 20px;
+				height: 20px;
+				background-color: #06526C;
+				border-radius: 50%;
+				margin-right: 20px;
+			}
+		}
+	}
+
+	&__btn{
+		margin-top: 70px;
+		color: #fff;
+		background-color: $pink;
+		height: 53px;
+		width: 240px;
+		border: none;
+		border-radius: 50px;
+		display: flex;
+		align-items: center;
+		text-align: center;
+		padding-left: 35px;
+		img{
+			width: 20px;
+			margin-left: auto;
+			margin-right: 35px;
+		}
+	}
+
+	&__card{
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		margin-bottom: -60px;
+	}
+}
