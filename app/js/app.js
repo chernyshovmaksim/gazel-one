@@ -2,9 +2,7 @@ import $ from 'jquery';
 window.jQuery = $;
 window.$ = $;
 
-// import 'slick-carousel';
-// import IMask from 'imask';
-
+import 'slick-carousel';
 
 $(document).ready(function () {
 

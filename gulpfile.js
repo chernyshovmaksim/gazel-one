@@ -73,6 +73,10 @@ const scripts = cb => {
 								presets: ['@babel/env'],
 								plugins: ['babel-plugin-root-import']
 							}
+						},
+						{
+							test: /\.css$/i,
+							use: ["style-loader", "css-loader"],
 						}
 					]
 				}

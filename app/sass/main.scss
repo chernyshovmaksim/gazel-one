@@ -1,114 +1,104 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 
 @import "reset";
 @import "vars";
 @import "mixins";
 
-body{
+body {
 	color: #050038;
-	font-family: 'Montserrat', sans-serif;
+	font-family: "Montserrat", sans-serif;
 }
-.container{
+.container {
 	margin: 0 auto;
 	width: 90%;
 	max-width: 1180px;
 }
-.section__title{
+
+.section__title {
 	text-align: center;
-	font-family: 'Montserrat', sans-serif;
+	font-family: "Montserrat", sans-serif;
 	font-size: 35px;
 	font-weight: 700;
+	width: 580px;
+	color: $dark;
+	margin: 0 auto;
+	padding-top: 120px;
 }
-.section__description{
+.section__description {
 	text-align: center;
-	font-family: 'Raleway', sans-serif;
+	font-family: "Raleway", sans-serif;
 	font-size: 20px;
 	line-height: 30px;
 	margin-top: 50px;
+	width: 370px;
+	margin-left: auto;
+	margin-right: auto;
 }
-
-
-@import './header';
-@import './hero';
-
-.prices{
-	margin-top: 180px;
-	.prices_container{
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-		padding-top: 70px;
-		.price{
-			width: 30%;
-			.price__card{
-				padding: 20px 50px;
-				border-radius: 40px;
-				border: 1px solid $pink;
-
-				.card__title{
-					font-size: 25px;
-					color: $pink;
-					font-weight: 700;
-					font-family: 'Montserrat', sans-serif;
-					span{
-						padding-left: 32px;
-					}
-				}
-				.card__price{
-					font-size: 25px;
-					font-family: 'Montserrat', sans-serif;
-					color: $pink;
-					padding-top: 10px;
-					span{
-						font-size: 35px;
-						font-weight: 700;
-					}
-				}
-			}
-			.price__title{
-				font-family: 'Montserrat', sans-serif;
-				font-size: 18px;
-				font-weight: 600;
-				color: $dark-blue;
-				padding-top: 37px;
-			}
-			.price__list{
-				padding-top: 30px;
-				li{
-					font-family: 'Raleway', sans-serif;
-					font-size: 16px;
-					color: $dark-blue;
-					padding-bottom: 15px;
-					display: flex;
-					align-items: center;
-					img{
-						margin-right: 15px;
-					}
-				}
-			}
-			.price__btn{
-				margin-top: 25px;
-				width: 100%;
-				padding: 16px 0;
-				border: 0.5px solid #FF2F53;
-				border-radius: 50px;
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				text-align: center;
-				font-family: 'Raleway', sans-serif;
-				font-size: 17px;
-				font-weight: 500;
-				color: $dark-blue;
-				i{
-					padding-left: 15px;
-				}
-			}
+.section__tabs {
+	display: flex;
+	justify-content: center;
+	padding: 70px 0 !important;
+	text-transform: uppercase;
+	li {
+		color: $gray;
+		margin-left: 100px;
+		font-family: "Montserrat", sans-serif;
+		font-size: 14px;
+		font-weight: 600;
+		&:first-child {
+			margin-left: 0;
+		}
+		&:hover {
+			cursor: pointer;
 		}
 	}
 }
 
+.price__title {
+	font-family: "Montserrat", sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+	color: $dark-blue;
+	padding-top: 37px;
+}
+.price__list {
+	padding-top: 30px !important;
+	li {
+		font-family: "Raleway", sans-serif;
+		font-size: 16px;
+		color: $dark-blue;
+		padding-bottom: 15px;
+		display: flex;
+		align-items: center;
+		img {
+			margin-right: 15px;
+		}
+	}
+}
+.price__btn {
+	margin-top: 25px;
+	width: 100%;
+	padding: 16px 0;
+	border: 0.5px solid #ff2f53;
+	border-radius: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-family: "Raleway", sans-serif;
+	font-size: 17px;
+	font-weight: 500;
+	color: $dark-blue;
+	i {
+		padding-left: 15px;
+	}
+}
 
+@import "./header";
+@import "./hero";
+@import "./prices";
+@import "./services";
+@import "./callback";
 
 @import "media";

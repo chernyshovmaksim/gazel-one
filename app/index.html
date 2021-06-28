@@ -2,150 +2,325 @@
 <html lang="ru">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>GazelOne</title>
-	<link rel="stylesheet" href="./css/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GazelOne</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
-	
-	<header class="header">
-		<div class="container">
-			<div class="logo">
-				<a href="/">
-					<img src="./img/source/logo.svg" alt="GazelOne">
-				</a>
-			</div>
-			<div class="navbar">
-				<ul class="navbar__list">
-					<a href="#"><li class="navbar__element">Услуги</li></a>
-					<a href="#"><li class="navbar__element">Автопарк</li></a>
-					<a href="#"><li class="navbar__element">Цены</li></a>
-					<a href="#"><li class="navbar__element">Отзывы</li></a>
-					<a href="#"><li class="navbar__element">Документы</li></a>
-					<a href="#"><li class="navbar__element">Контакты</li></a>
-				</ul>
-			</div>
-			<div class="tel">
-				<a href="/">+7 (923) 777-77-31 <img src="./img/source/telephone.svg" alt=""></a>
-			</div>
-		</div>
-	</header>
+<header class="header">
+    <div class="container">
+        <div class="logo">
+            <a href="/">
+                <img src="./img/source/logo.svg" alt="GazelOne">
+            </a>
+        </div>
+        <div class="navbar">
+            <ul class="navbar__list">
+                <a href="#">
+                    <li class="navbar__element">Услуги</li>
+                </a>
+                <a href="#">
+                    <li class="navbar__element">Автопарк</li>
+                </a>
+                <a href="#">
+                    <li class="navbar__element">Цены</li>
+                </a>
+                <a href="#">
+                    <li class="navbar__element">Отзывы</li>
+                </a>
+                <a href="#">
+                    <li class="navbar__element">Документы</li>
+                </a>
+                <a href="#">
+                    <li class="navbar__element">Контакты</li>
+                </a>
+            </ul>
+        </div>
+        <div class="tel">
+            <a href="/">+7 (923) 777-77-31 <img src="./img/source/telephone.svg"></a>
+        </div>
+    </div>
+</header>
 
+<section class="hero">
+    <div class="container">
+        <h1 class="hero__title">
+            Грузовые перевозки любой сложности по Новосибирску
+        </h1>
+        <h4 class="hero__description">
+            Выберите свой оптимальный набор предложений по выгодным ценам
+        </h4>
+        <ul class="hero__services">
+            <li>
+                <div class="round"></div>
+                Газель с грузчиками
+            </li>
+            <li>
+                <div class="round"></div>
+                Переезд дом/офис
+            </li>
+            <li>
+                <div class="round"></div>
+                Междугородние перевозки
+            </li>
+            <li>
+                <div class="round"></div>
+                Вывоз мусора и хлама
+            </li>
+        </ul>
+        <button class="hero__btn">
+            Оставить заявку <img src="./img/source/arrow-right.svg">
+        </button>
 
+        <div class="hero__card">
+            <img src="./img/card.svg" alt="Газель + 2 грузчика = от 2000 руб.">
+        </div>
+    </div>
+</section>
 
-	<section class="hero">
-		<div class="container">
-			<h1 class="hero__title">
-				Грузовые перевозки любой сложности по Новосибирску
-			</h1>
-			<h4 class="hero__description">
-				Выберите свой оптимальный набор предложений по выгодным ценам
-			</h4>
-			<ul class="hero__services">
-				<li><div class="round"></div> Газель с грузчиками</li>
-				<li><div class="round"></div> Переезд дом/офис</li>
-				<li><div class="round"></div> Междугородние перевозки</li>
-				<li><div class="round"></div> Вывоз мусора и хлама</li>
-			</ul>
-			<button class="hero__btn">
-				Оставить заявку <img src="./img/source/arrow-right.svg">
-			</button>
+<section class="prices">
+    <div class="container">
 
-			<div class="hero__card">
-				<img src="./img/card.svg" alt="Газель + 2 грузчика = от 2000 руб.">
-			</div>
-		</div>
-	</section>
+        <div class="section__title">
+            Выгодные тарифы
+        </div>
+        <div class="section__description">
+            Оптимальный набор предложений
+            на каждый день
+        </div>
 
+        <div class="prices_container">
+            <div class="price">
+                <div class="price__card">
+                    <div class="card__title">Газель<br>
+                        <span>+ 2 Грузчика</span>
+                    </div>
+                    <div class="card__price">= от <span>2000</span> ₽</div>
+                </div>
+                <div class="price__title">
+                    Переезд «Экономный»
+                </div>
+                <ul class="price__list">
+                    <li><img src="./img/complete.svg"> Авто 10 м3 на 3 часа</li>
+                    <li><img src="./img/complete.svg"> Погрузка и разгрузка</li>
+                    <li><img src="./img/complete.svg"> Упаковка вещей и мебели</li>
+                    <li><img src="./img/complete.svg"> Сборка и разборка мебели</li>
+                    <li><img src="./img/complete.svg"> Поэтажные проносы без лифта</li>
+                    <li><img src="./img/complete.svg"> Каждый следующий час 900 ₽</li>
+                </ul>
+                <div class="price__btn">
+                    Заказать от 2000 ₽ <i><img src="./img/arrow-right-red.svg"></i>
+                </div>
+            </div>
+            <div class="price">
+                <div class="price__card">
+                    <div class="card__title">Газель<br>
+                        <span>+ 2 Грузчика</span>
+                    </div>
+                    <div class="card__price">= от <span>2000</span> ₽</div>
+                </div>
+                <div class="price__title">
+                    Переезд «Экономный»
+                </div>
+                <ul class="price__list">
+                    <li><img src="./img/complete.svg"> Авто 10 м3 на 3 часа</li>
+                    <li><img src="./img/complete.svg"> Погрузка и разгрузка</li>
+                    <li><img src="./img/complete.svg"> Упаковка вещей и мебели</li>
+                    <li><img src="./img/complete.svg"> Сборка и разборка мебели</li>
+                    <li><img src="./img/complete.svg"> Поэтажные проносы без лифта</li>
+                    <li><img src="./img/complete.svg"> Каждый следующий час 900 ₽</li>
+                </ul>
+                <div class="price__btn">
+                    Заказать от 2000 ₽ <i><img src="./img/arrow-right-red.svg"></i>
+                </div>
+            </div>
+            <div class="price">
+                <div class="price__card">
+                    <div class="card__title">Газель<br>
+                        <span>+ 2 Грузчика</span>
+                    </div>
+                    <div class="card__price">= от <span>2000</span> ₽</div>
+                </div>
+                <div class="price__title">
+                    Переезд «Экономный»
+                </div>
+                <ul class="price__list">
+                    <li><img src="./img/complete.svg"> Авто 10 м3 на 3 часа</li>
+                    <li><img src="./img/complete.svg"> Погрузка и разгрузка</li>
+                    <li><img src="./img/complete.svg"> Упаковка вещей и мебели</li>
+                    <li><img src="./img/complete.svg"> Сборка и разборка мебели</li>
+                    <li><img src="./img/complete.svg"> Поэтажные проносы без лифта</li>
+                    <li><img src="./img/complete.svg"> Каждый следующий час 900 ₽</li>
+                </ul>
+                <div class="price__btn">
+                    Заказать от 2000 ₽ <i><img src="./img/arrow-right-red.svg"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
+<section class="services">
+    <div class="container">
 
-	<section class="prices">
-		<div class="container">
+        <div class="section__title">
+            Перевозки любой сложности быстро и надёжно
+        </div>
+        <div class="section__description">
+            Свыше 15 видов транспортных услуг по выгодным ценам
+        </div>
 
-			<div class="section__title">
-				Выгодные тарифы
-			</div>
-			<div class="section__description">
-				Оптимальный набор предложений <br>
-				на каждый день
-			</div>
+        <ul class="section__tabs">
+            <li>Грузоперевозки</li>
+            <li>Переезды под ключ</li>
+            <li>Вывоз мусора</li>
+        </ul>
+        <div class="services__container">
+            <div class="slide">
+                <div class="price">
+                    <div class="service__img">
+                        <img src="./img/gazel.webp" alt="Название услуги">
+                    </div>
+                    <div class="price__title">
+                        Переезд «Экономный»
+                    </div>
+                    <ul class="price__list">
+                        <li><img src="./img/complete.svg"> Авто 10 м3 на 3 часа</li>
+                        <li><img src="./img/complete.svg"> Погрузка и разгрузка</li>
+                        <li><img src="./img/complete.svg"> Упаковка вещей и мебели</li>
+                        <li><img src="./img/complete.svg"> Сборка и разборка мебели</li>
+                        <li><img src="./img/complete.svg"> Поэтажные проносы без лифта</li>
+                        <li><img src="./img/complete.svg"> Каждый следующий час 900 ₽</li>
+                    </ul>
+                    <div class="price__btn">
+                        Заказать от 2000 ₽ <i><img src="./img/arrow-right-red.svg"></i>
+                    </div>
+                </div>
+                <div class="price">
+                    <div class="service__img">
+                        <img src="./img/gazel.webp" alt="Название услуги">
+                    </div>
+                    <div class="price__title">
+                        Переезд «Экономный»
+                    </div>
+                    <ul class="price__list">
+                        <li><img src="./img/complete.svg"> Авто 10 м3 на 3 часа</li>
+                        <li><img src="./img/complete.svg"> Погрузка и разгрузка</li>
+                        <li><img src="./img/complete.svg"> Упаковка вещей и мебели</li>
+                        <li><img src="./img/complete.svg"> Сборка и разборка мебели</li>
+                        <li><img src="./img/complete.svg"> Поэтажные проносы без лифта</li>
+                        <li><img src="./img/complete.svg"> Каждый следующий час 900 ₽</li>
+                    </ul>
+                    <div class="price__btn">
+                        Заказать от 2000 ₽ <i><img src="./img/arrow-right-red.svg"></i>
+                    </div>
+                </div>
+                <div class="price">
+                    <div class="service__img">
+                        <img src="./img/gazel.webp" alt="Название услуги">
+                    </div>
+                    <div class="price__title">
+                        Переезд «Экономный»
+                    </div>
+                    <ul class="price__list">
+                        <li><img src="./img/complete.svg"> Авто 10 м3 на 3 часа</li>
+                        <li><img src="./img/complete.svg"> Погрузка и разгрузка</li>
+                        <li><img src="./img/complete.svg"> Упаковка вещей и мебели</li>
+                        <li><img src="./img/complete.svg"> Сборка и разборка мебели</li>
+                        <li><img src="./img/complete.svg"> Поэтажные проносы без лифта</li>
+                        <li><img src="./img/complete.svg"> Каждый следующий час 900 ₽</li>
+                    </ul>
+                    <div class="price__btn">
+                        Заказать от 2000 ₽ <i><img src="./img/arrow-right-red.svg"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-			<div class="prices_container">
-				<div class="price">
-					<div class="price__card">
-						<div class="card__title">Газель<br>
-							<span>+ 2 Грузчика</span>
-						</div>
-						<div class="card__price">= от <span>2000</span> ₽</div>
-					</div>
-					<div class="price__title">
-						Переезд «Экономный»
-					</div>
-					<ul class="price__list">
-						<li><img src="./img/complete.svg">	Авто 10 м3 на 3 часа</li>
-						<li><img src="./img/complete.svg">	Погрузка и разгрузка</li>
-						<li><img src="./img/complete.svg">	Упаковка вещей и мебели</li>
-						<li><img src="./img/complete.svg">	Сборка и разборка мебели</li>
-						<li><img src="./img/complete.svg">	Поэтажные проносы без лифта</li>
-						<li><img src="./img/complete.svg">	Каждый следующий час 900 ₽</li>
-					</ul>
-					<div class="price__btn">
-						Заказать от 2000 ₽ <i><img src="./img/arrow-right-red.svg"></i>
-					</div>
-				</div>
-				<div class="price">
-					<div class="price__card">
-						<div class="card__title">Газель<br>
-							<span>+ 2 Грузчика</span>
-						</div>
-						<div class="card__price">= от <span>2000</span> ₽</div>
-					</div>
-					<div class="price__title">
-						Переезд «Экономный»
-					</div>
-					<ul class="price__list">
-						<li><img src="./img/complete.svg">	Авто 10 м3 на 3 часа</li>
-						<li><img src="./img/complete.svg">	Погрузка и разгрузка</li>
-						<li><img src="./img/complete.svg">	Упаковка вещей и мебели</li>
-						<li><img src="./img/complete.svg">	Сборка и разборка мебели</li>
-						<li><img src="./img/complete.svg">	Поэтажные проносы без лифта</li>
-						<li><img src="./img/complete.svg">	Каждый следующий час 900 ₽</li>
-					</ul>
-					<div class="price__btn">
-						Заказать от 2000 ₽ <i><img src="./img/arrow-right-red.svg"></i>
-					</div>
-				</div>
-				<div class="price">
-					<div class="price__card">
-						<div class="card__title">Газель<br>
-							<span>+ 2 Грузчика</span>
-						</div>
-						<div class="card__price">= от <span>2000</span> ₽</div>
-					</div>
-					<div class="price__title">
-						Переезд «Экономный»
-					</div>
-					<ul class="price__list">
-						<li><img src="./img/complete.svg">	Авто 10 м3 на 3 часа</li>
-						<li><img src="./img/complete.svg">	Погрузка и разгрузка</li>
-						<li><img src="./img/complete.svg">	Упаковка вещей и мебели</li>
-						<li><img src="./img/complete.svg">	Сборка и разборка мебели</li>
-						<li><img src="./img/complete.svg">	Поэтажные проносы без лифта</li>
-						<li><img src="./img/complete.svg">	Каждый следующий час 900 ₽</li>
-					</ul>
-					<div class="price__btn">
-						Заказать от 2000 ₽ <i><img src="./img/arrow-right-red.svg"></i>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+        <div class="services__info">
+            <span>Собственный обширный <a href="/">автопарк — более 500 машин</a></span>
+        </div>
+    </div>
+</section>
 
+<section class="callback">
+    <div class="container">
+        <div class="callback__title">Оставьте заявку прямо сейчас</div>
+        <div class="callback__description">Наши менеджеры свяжутся с вами в течение 15 минут и ответят на все
+            интересующие вас вопросы
+        </div>
+        <div class="callback__form">
+            <form>
+                <div class="row">
+                    <input type="text" class="name" name="name" placeholder="Имя">
+                    <input type="text" class="tel" name="tel" placeholder="Телефон">
+                </div>
+                <button type="button">Оставить заявку <img src="./img/arrow-right.svg"></button>
+                <div class="row">
+                    <label for="agree">
+                        <input type="checkbox" id="agree">
+                        Согласие на обработку персональных данных
+                    </label>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
 
-
-	<script src="./js/app.min.js"></script>
+<section class="car-park">
+    <div class="container">
+        <div class="section__title">Автопарк грузоподъёмность до 15 тонн</div>
+        <div class="section__description">Идеальное техническое состояние автомобилей</div>
+        <ul class="section__tabs">
+            <li>до 1,5 тонн</li>
+            <li>до 10 тонн</li>
+            <li>до 15 тонн</li>
+            <li>рефрижератор</li>
+        </ul>
+        <div class="tabs__container">
+            <div class="tab">
+                <div class="slider">
+                    <div class="slider__item">
+                        <div class="description">
+                            <ul class="title">
+                                <li>1,5 тонны</li>
+                                <li>10 м3</li>
+                                <li>4 палета</li>
+                            </ul>
+                            <div class="text">
+                                Лучший вариант для городских грузоперевозок. Мобильная машина для наших узких проездов и
+                                дворов. Для переезда среднего масштаба.
+                            </div>
+                        </div>
+                        <div class="images">
+                            <div class="schema"><img src="./img/Pallet.webp" alt="Название схемы"></div>
+                            <div class="car"><img src="./img/gazel2.webp" alt="Название автомобиля"></div>
+                        </div>
+                        <div class="arrows">
+                            <div class="prev"></div>
+                            <div class="next"></div>
+                        </div>
+                        <div class="info">
+                            <div class="count">1 / 5</div>
+                            <ul class="text">
+                                <li>Длина 3 м</li>
+                                <li>Ширина 2 м</li>
+                                <li>Высота 1,8 м</li>
+                                <li>10 м3</li>
+                                <li>1500 кг</li>
+                            </ul>
+                            <button type="button">Оставить заявку <img src="./img/arrow-right.svg"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="./js/app.min.js"></script>
 </body>
 
 </html>

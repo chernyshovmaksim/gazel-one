@@ -1,0 +1,87 @@
+.callback {
+	background-color: $purple;
+	padding-bottom: 100px;
+	background-image: url("./../img/callback.webp");
+	background-position: center calc(100% + 5px);
+	background-repeat: no-repeat;
+	.callback__title {
+		font-family: "Montserrat", sans-serif;
+		font-size: 35px;
+		font-weight: 700;
+		color: white;
+		padding-top: 100px;
+	}
+	.callback__description {
+		font-family: "Raleway", sans-serif;
+		font-size: 20px;
+		padding-top: 50px;
+		color: white;
+		width: 527px;
+	}
+	.callback__form {
+		padding-top: 70px;
+		.row {
+			.name {
+				width: 360px;
+				height: 53px;
+				background-color: #fff;
+				border: none;
+				border-radius: 10px;
+				padding-left: 30px;
+				font-family: "Raleway", sans-serif;
+				font-size: 16px;
+				color: $dark-blue;
+				&::placeholder {
+					color: $dark-blue !important;
+				}
+			}
+			.tel {
+				width: 360px;
+				height: 53px;
+				border: none;
+				border-radius: 10px;
+				margin-left: 40px;
+				background: none;
+				border: 1px solid #ffffff;
+				padding-left: 30px;
+				font-family: "Raleway", sans-serif;
+				font-size: 16px;
+				color: white;
+				&::placeholder {
+					color: white;
+				}
+			}
+			label {
+				font-family: "Raleway", sans-serif;
+				font-size: 15px;
+				color: white;
+				input{
+					width: 20px;
+					height: 20px;
+					border: 1px solid white;
+					border-radius: 5px;
+					background: none !important;
+				}
+			}
+		}
+		button {
+			margin-top: 70px;
+			margin-bottom: 40px;
+			color: #fff;
+			background-color: $pink;
+			height: 53px;
+			width: 240px;
+			border: none;
+			border-radius: 50px;
+			display: flex;
+			align-items: center;
+			text-align: center;
+			padding-left: 35px;
+			img {
+				width: 20px;
+				margin-left: auto;
+				margin-right: 35px;
+			}
+		}
+	}
+}

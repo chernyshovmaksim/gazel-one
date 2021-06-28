@@ -1,0 +1,37 @@
+.services {
+	.services__container {
+		.slide{
+			display: flex !important;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			.price {
+				width: 30%;
+			}
+		}
+	}
+	.service__img {
+		background-image: url("./../img/service_bg.webp");
+		background-position: center bottom;
+		background-repeat: no-repeat;
+		img {
+			max-height: 198px;
+			margin: 0 auto;
+		}
+	}
+	.services__info {
+		padding-top: 72px;
+		padding-bottom: 122px;
+		span {
+			font-family: "Raleway", sans-serif;
+			font-size: 16px;
+			a {
+				text-transform: uppercase;
+				color: $light-blue;
+				text-decoration: none;
+				font-family: "Montserrat", sans-serif;
+				font-weight: 600;
+				font-size: 14px;
+			}
+		}
+	}
+}
