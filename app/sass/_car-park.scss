@@ -1,0 +1,83 @@
+.car-park{
+	.tabs__container{
+		.tab{
+
+		}
+	}
+	.slider{
+		.slider__item{
+			.description{
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				grid-gap: 1em;
+				.title{
+					display: flex;
+					li{
+						margin-left: 122px;
+						font-family: 'Montserrat', sans-serif;
+						font-size: 20px;
+						color: $dark-blue;
+						font-weight: 700;
+						&:first-child{
+							margin-left: 0;
+						}
+					}
+				}
+				.text{
+					font-family: 'Raleway', sans-serif;
+					font-size: 16px;
+					color: $dark-blue;
+				}
+			}
+			.images{
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				grid-gap: 1em;
+				margin-top: 70px;
+				.schema{
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+				.car{
+					display: flex;
+					justify-content: flex-start;
+					align-items: center;
+				}
+			}
+			.info{
+				margin-top: 70px;
+				margin-bottom: 120px;
+				display: flex;
+				align-items: center;
+				justify-content: flex-start;
+				.count{
+					font-family: 'Montserrat', sans-serif;
+					font-weight: 600;
+					font-size: 14px;
+					text-align: center;
+					width: 100px;
+					border-bottom: 1.5px solid $pink;
+					padding-bottom: 11px;
+				}
+				.text{
+					width: 100%;
+					display: flex;
+					justify-content: flex-start;
+					font-family: 'Raleway', sans-serif;
+					font-weight: 400;
+					font-size: 16px;
+					margin-left: 140px;
+					li{
+						margin-right: 50px;
+					}
+				}
+				button{
+					margin-top: 0;
+					margin-left: auto;
+					width: 400px;
+				}
+			}
+		}
+	}
+}

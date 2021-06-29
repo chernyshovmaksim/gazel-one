@@ -9,6 +9,7 @@ body {
 	color: #050038;
 	font-family: "Montserrat", sans-serif;
 }
+
 .container {
 	margin: 0 auto;
 	width: 90%;
@@ -25,6 +26,7 @@ body {
 	margin: 0 auto;
 	padding-top: 120px;
 }
+
 .section__description {
 	text-align: center;
 	font-family: "Raleway", sans-serif;
@@ -35,20 +37,24 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 }
+
 .section__tabs {
 	display: flex;
 	justify-content: center;
 	padding: 70px 0 !important;
 	text-transform: uppercase;
+
 	li {
 		color: $gray;
 		margin-left: 100px;
 		font-family: "Montserrat", sans-serif;
 		font-size: 14px;
 		font-weight: 600;
+
 		&:first-child {
 			margin-left: 0;
 		}
+
 		&:hover {
 			cursor: pointer;
 		}
@@ -62,8 +68,10 @@ body {
 	color: $dark-blue;
 	padding-top: 37px;
 }
+
 .price__list {
 	padding-top: 30px !important;
+
 	li {
 		font-family: "Raleway", sans-serif;
 		font-size: 16px;
@@ -71,11 +79,13 @@ body {
 		padding-bottom: 15px;
 		display: flex;
 		align-items: center;
+
 		img {
 			margin-right: 15px;
 		}
 	}
 }
+
 .price__btn {
 	margin-top: 25px;
 	width: 100%;
@@ -90,15 +100,37 @@ body {
 	font-size: 17px;
 	font-weight: 500;
 	color: $dark-blue;
+
 	i {
 		padding-left: 15px;
 	}
 }
 
-@import "./header";
-@import "./hero";
-@import "./prices";
-@import "./services";
-@import "./callback";
+.red__btn {
+	margin-top: 70px;
+	color: #fff;
+	background-color: $pink;
+	height: 53px;
+	width: 240px;
+	border: none;
+	border-radius: 50px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	padding-left: 35px;
+
+	img {
+		width: 20px;
+		margin-left: auto;
+		margin-right: 35px;
+	}
+}
+
+@import "header";
+@import "hero";
+@import "prices";
+@import "services";
+@import "callback";
+@import "car-park";
 
 @import "media";
